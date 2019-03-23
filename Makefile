@@ -5,7 +5,7 @@ up:
 	docker-compose -f local.yml up
 
 up-d:
-	docker-compose -d -f local.yml
+	docker-compose -f local.yml up -d
 
 test:
 	docker-compose -f local.yml run django pytest
@@ -22,10 +22,7 @@ restart:
 	docker-compose stop && docker-compose start
 
 shell-django:
-	docker exec -ti django bash
-
-log-django:
-	docker-compose logs django
+	docker exec -ti penny_wise_django_1 sh
 
 
 
