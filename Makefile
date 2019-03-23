@@ -30,7 +30,7 @@ log-django:
 
 
 collectstatic:
-	docker exec sellerus_docker /bin/sh -c "python manage.py collectstatic --noinput"
+	docker exec django /bin/sh -c "python manage.py collectstatic --noinput"
 
 makemigrations:
-	docker exec sellerus_docker /bin/sh -c "python manage.py makemigrations"
+	docker exec django /bin/sh -c "python manage.py makemigrations"
