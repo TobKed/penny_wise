@@ -13,16 +13,18 @@ test:
 
 
 start:
-	docker-compose start
+	docker-compose -f local.yml start
 
 stop:
-	docker-compose stop
+	docker-compose -f local.yml stop
 
-restart:
-	docker-compose stop && docker-compose start
+restart: stop start
 
 shell-django:
 	docker exec -ti penny_wise_django_1 sh
+
+log-django:
+	docker-compose -f local.yml logs django
 
 
 
