@@ -17,3 +17,5 @@ before_script:
   - psql -c 'create database penny_wise;' -U postgres
 script:
   - "pytest --cov=./"
+after_success:
+  - codecov
