@@ -11,6 +11,8 @@ Track your expenses
      :alt: Black code style
 .. image:: https://travis-ci.org/TobKed/penny_wise.svg?branch=master
     :target: https://travis-ci.org/TobKed/penny_wise
+.. image:: https://codecov.io/gh/TobKed/penny_wise/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/TobKed/penny_wise
 
 
 :License: MIT
